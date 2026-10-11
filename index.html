@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lutche Business</title>
+    <!-- Link para carregar os ícones profissionais dos serviços -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f4f7f5; }
+        h1, h2, h3 { color: #0f3d2a; }
+        
+        /* Configuração correta do Topo com Imagem de fundo e Filtro Verde Escuro */
+        header { 
+            margin: 0; 
+            padding: 80px 20px; 
+            text-align: center; 
+           background: linear-gradient(rgba(15, 61, 42, 0.88), rgba(15, 61, 42, 0.88)), url('https://peakpx.com') no-repeat center center;
+
+
+            background-size: cover;
+        }
+        header h1 { margin: 0; font-size: 3em; color: #8ce09b; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        header p { color: #ffffff; opacity: 0.95; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.4); margin-top: 10px; }
+
+        p { text-align: center; max-width: 800px; margin: 0 auto 30px; padding: 0 20px; font-size: 1.1em; }
+        h2 { border-bottom: 2px solid #8ce09b; padding-bottom: 5px; max-width: 800px; margin: 40px auto 20px; }
+        
+        /* Estilização da lista para transformar os serviços em cartões com ícones */
+        .services-container { max-width: 800px; margin: 0 auto 40px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+        .service-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-top: 4px solid #0f3d2a; text-align: center; }
+        .service-card i { font-size: 2.5em; color: #0f3d2a; margin-bottom: 15px; }
+        .service-card h3 { margin: 10px 0; font-size: 1.3em; }
+        .service-card p { font-size: 0.95em; color: #555; margin: 0; padding: 0; }
+
+        form { max-width: 600px; margin: 0 auto 50px; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #0f3d2a; color: #8ce09b; border: 2px solid #8ce09b; padding: 12px; font-size: 1.1em; font-weight: bold; border-radius: 4px; cursor: pointer; width: 100%; transition: 0.3s; }
+        button:hover { background: #8ce09b; color: #0f3d2a; }
+        footer { text-align: center; padding: 25px; background: #0f3d2a; color: #fff; margin-top: 40px; }
+    </style>
+</head>
+
+<body>
+
+    <!-- Bloco do topo unificado para a imagem funcionar perfeitamente -->
+    <header>
+        <h1>Lutche Business</h1>
+        <p>Inteligência Operacional e Suporte Estratégico Remoto</p>
+    </header>
+
+    <h2>Quem Somos</h2>
+    <p>A Lutche Business oferece assessoria remota especializada para pequenas, médias e grandes empresas. Nosso objetivo é absorver demandas operacionais e administrativas, permitindo que você foque no crescimento do seu negócio.</p>
+
+    <h2>Nossos Serviços</h2>
+    <!-- Nova estrutura organizada em blocos visuais com ícones claros -->
+    <div class="services-container">
+        <div class="service-card">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>Assessoria Administrativa</h3>
+            <p>Organização de processos e rotinas operacionais.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <h3>Gestão Financeira</h3>
+            <p>Controle de fluxo de caixa, contas a pagar e receber.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>Suporte Comercial</h3>
+            <p>Atendimento especializado e pós-venda corporativo.</p>
+        </div>
+    </div>
+
+    <h2>Solicite uma Consultoria</h2>
+    <form action="https://formspree.io/f/mzedvkbv" method="POST">
+        <label for="nome">Nome ou Empresa:</label><br>
+        <input type="text" id="nome" name="name" required><br><br>
+
+        <label for="email">E-mail de Contato:</label><br>
+        <input type="email" id="email" name="_replyto" required><br><br>
+
+        <label for="mensagem">Como podemos ajudar seu negócio?</label><br>
+        <textarea id="mensagem" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2026 Lutche Business. Todos os direitos reservados. | Contato: eduardosilvandrade217@gmail.com</p>
+    </footer>
+
+</body>
+</html>
